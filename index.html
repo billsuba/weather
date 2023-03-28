@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Weather App</title>
+
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="search-box">
+				<input type="text" placeholder="Search for a city" id="search-bar">
+        <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
+      </div>
+
+      <div class="loading-spinner"><i class="fa-solid fa-spinner fa-spin"></i></div>
+
+			<main class="weather-box">
+				<h2 id="city">New York</h2>
+
+        <div class="weather-main">
+          <img src="https://openweathermap.org/img/wn/10d@2x.png">
+          <h1 id="temp">48&#176C</h1>
+        </div>
+
+        <div id="description">mostly cloudy</div>
+
+        <div class="minmax">
+          <span id="max">H:52&#176C</span>
+          <span id="min">L:42&#176C</span>
+        </div>
+			</main>
+
+      <div class="weather-details">
+        <div class="wind-container">
+          <div class="details-heading">
+            <i class="fa-solid fa-wind"></i>
+            <span>Wind Speed</span>
+          </div>
+          <span id="wind">9mph</span>
+        </div>
+
+        <div class="humidity-container">
+          <div class="details-heading">
+            <i class="fa-solid fa-droplet"></i>
+            <span>Humidity</span>
+          </div>
+          <span id="humidity">64%</span>
+        </div>
+      </div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
